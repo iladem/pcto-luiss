@@ -1,31 +1,31 @@
 /******************************************************************************
 
 Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
 #include <stdio.h>
 
+void ft_ft(int*nbr,int*x,int y)
+{
+    *nbr=42;
+    *x=10;
+    y=102;
+    printf("il valore nella funzione di ft_ft(y):%d\n",y);
+}
 int main()
 {
-    int n1;
-    int n2;
-    int n3;
-    printf("inserire n1\n");
-    scanf("%d",&n1);
-    printf("inserire n2\n");
-    scanf("%d",&n2);
-    printf("inserire n3\n");
-    scanf("%d",&n3);
-    if(n1+n2>n3 && n2+n3>n1 && n3+n1>n2)
-    {
-    printf("somma dei lati=triangolo\n");
-}
-    else
-    {
-    printf("somma dei lati!=triangolo\n");
-    }
+    int nbr=2;
+    int x=7;
+    int y=3;
+    
+    printf("il valore iniziale: %d\n",x);
+    ft_ft(&x,&nbr, y);
+    printf("il valore: %d\n",x);
+    printf("il valore: %d\n",y);
+  
+    printf("il valore effettivo dopo aver richiamato ft_ft: %d\n",nbr);
     return 0;
 }
