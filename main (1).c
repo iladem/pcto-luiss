@@ -1,31 +1,26 @@
 /******************************************************************************
 
 Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
 #include <stdio.h>
 
+void ft_ft(int*nbr)
+{
+    *nbr=42;
+}
 int main()
 {
-    float celsius;
-    float fahrenheit;
-    float kelvin;
-    printf("inserisci la temperatura in celsius\n");
-    scanf("%f",&celsius);
+    int nbr=2;
+    int x=7;
     
-    if(celsius <-273.15)
-    {
-    printf("errore\n");
-    }
-    else
-    {
-    fahrenheit=(9/5)*celsius + 32;
-    kelvin=celsius+273.15;
-    printf("la temperatura in kelvin è %f\n",kelvin);
-    printf("la temperatura in fahrenheit è %f\n",fahrenheit);
-    }
+    printf("il valore iniziale: %d\n",x);
+    ft_ft(&x);
+    
+    printf("il valore: %d\n",x);
+    printf("il valore effettivo dopo aver richiamato ft_ft: %d\n",nbr);
     return 0;
 }
