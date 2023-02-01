@@ -1,30 +1,28 @@
 /******************************************************************************
 
 Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
 #include <stdio.h>
 
+
+
+void fattoriale(int numero);
+{}
 int main()
 {
-    int anno;
-    printf("in che anno sei nato?\n");
-    scanf("%d",&anno);
+    int i;
+    int totale=1;
+    printf("scegli un numero\n");
+    scanf("%d",&i);
     
-    if(anno==1969)
-    {
-    printf("utente nato lo stesso anno in cui l'uomo è andato sulla Luna\n");
-    }
-    else if(anno<1969)
-    {
-    printf("utente nato prima dell'anno in cui l'uomo è andato sulla Luna di %d\n",1969-anno);
-    }
-    else
-    {
-    printf("utente nato dopo l'anno in cui l'uomo è andato sulla Luna di %d anni\n",anno-1969);
-    }
-    return 0;
+    while(i>0)
+{
+    tot=tot*i;
+    i=i-1
+    printf("finale%d\n",tot);
 }
+ return 0;
