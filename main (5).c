@@ -1,31 +1,22 @@
 /******************************************************************************
 
 Welcome to GDB Online.
-  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
-  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
-  Code, Compile, Run and Debug online from anywhere in world.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
 #include <stdio.h>
-
-void ft_ultimate_ft(int*********nbr)
+void lett(char A)
 {
-    *********nbr=42;
+    printf("la lettera inserita è %c\n",A);
 }
 int main()
 {
-    int a,*b,**c,***d,****e,*****f,******g,*******h,********i,*********l;
-    a = 1;
-    b = &a;
-    c = &b;
-    d = &c;
-    e = &d;
-    f = &e;
-    g = &f;
-    h = &g;
-    i = &h;
-    l = &i;
-    ft_ultimate_ft(l);
-    printf("%d\n",*********l);
+    char lettera;
+    printf("inserire una lettera\n");
+    scanf("%c",&lettera);
+    lett(lettera);
+
     return 0;
 }
