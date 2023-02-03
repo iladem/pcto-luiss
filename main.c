@@ -8,23 +8,42 @@ Welcome to GDB Online.
 *******************************************************************************/
 #include <stdio.h>
 
-void fattoriale(int numero)
+
+int ordinanumeri (int *array, int dimensione)
+{
+    int j;
+    int temp;
+    int s;
+    
+    temp=0;
+    j=0;
+    while(j<dimensione-1)
     {
-        int tot=1;
-        while(numero>0)
-    {
-        tot=tot*numero;
-        numero=numero-1;
-    }    
-        printf("il fattoriale è: %d\n",tot);
+        s=j+1;
+        while(s<dimensione)
+        {
+          if(array[j]>array[s]) 
+      {
+        temp=array[j];
+        array[j]=array[s];
+        array[s]=temp;
     }
+      s=s+1;
+    }
+      j=j+1;
+}
+}
 int main()
- { 
-    int N;
-    printf("prendi un numero\n");
-    scanf("%d",&N);
+{
+    int array[]={2,6,9,5,3,10,4,21,42,-3};
+    int dimensione=10;
+    int j=0;
     
-    fattoriale(N);
-    
+    ordinanumeri(array,dimensione);
+    while(j<dimensione)
+    {
+      printf("%d\n",array[j]);
+      j=j+1;
+    }
     return 0;
 }
